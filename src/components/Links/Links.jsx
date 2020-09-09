@@ -5,7 +5,9 @@ import Link from '../Link';
 class Links extends Component{
     render(){
         return(
-            <Container>
+            <Container className="text-center">
+                <Link/>
+                <Link/>
                 <Link/>
                 <Link/>
             </Container>

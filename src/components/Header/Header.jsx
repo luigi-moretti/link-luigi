@@ -6,7 +6,7 @@ class Header extends Component{
 
     render(){
         return(
-            <Container>
+            <Container className="text-center">
                 <Image src="" alt="avatar" />
                 <p>Luigi Moretti</p>
             </Container>

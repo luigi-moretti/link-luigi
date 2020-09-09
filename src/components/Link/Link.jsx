@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-//import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button"
 
 class Link extends Component{
     render(){
         return(
-            <Button size="lg">
-                Linkedin
-            </Button>
+            <div className="my-3">
+                <a href="https://www.linkedin.com.br" target="_blank" className="btn btn-outline-secondary btn-lg col-md-4 col-sm-10">
+                    Linkedin
+                </a>
+            </div>
         );
     }
 }
