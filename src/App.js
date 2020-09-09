@@ -1,27 +1,16 @@
 import React from 'react';
-import Header from './components/Header';
-import Links from './components/Links';
-import { Container } from 'react-bootstrap';
-//import Menu from './components/Menu';
-import { Nav } from 'react-bootstrap';
-import { Navbar } from 'react-bootstrap';
+import {BrowserRouter as Router } from 'react-router-dom';
+import Menu from './components/Navbar/Menu';
+import Routes from './Routes';
 
 function App() {
   return (
-    <Container>
-      <Navbar expand="lg">
-                <Navbar.Brand href="#home">Home</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#login">Login</Nav.Link>
-                    </Nav>
-                </Navbar.Collapse>
-            </Navbar>
-      <Header />
-      <Links />
-    </Container>
+    <Router>
+      <div>
+        <Menu/>
+        <Routes/>
+      </div>
+    </Router>
   );
 }
 

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class Link extends Component{
+class LinkItem extends Component{
     render(){
         return(
             <div className="my-3">
@@ -12,4 +12,4 @@ class Link extends Component{
     }
 }
 
-export default Link;
+export default LinkItem;

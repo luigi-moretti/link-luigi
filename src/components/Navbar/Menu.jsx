@@ -1,8 +1,24 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom';
 import { Nav } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
 
-class Menu {
+const links = [
+    {route:"/", label:"Home"},
+    {route:"/login", label:"Login"},
+    {route:"/admin", label:"Admin"}
+];
+
+class Menu extends Component{
+
+    renderLink = () =>{
+        return links.map(link => 
+            <Link key={link.route} className="nav-link" to={link.route}>
+                {link.label}
+            </Link>
+            )
+    }
+
     render() {
         return (
             <Navbar expand="lg">
@@ -10,8 +26,7 @@ class Menu {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#login">Login</Nav.Link>
+                        {this.renderLink()}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

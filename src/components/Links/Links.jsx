@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
-import Link from '../Link';
+import Link from '../LinkItem';
 
 class Links extends Component{
     render(){
