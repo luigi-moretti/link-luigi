@@ -1,15 +1,11 @@
-import React from 'react';
-import Header from './components/Header';
-import Links from './components/Links';
-import { Container } from 'react-bootstrap';
-//import Menu from './components/Menu';
+import React, { Component } from "react";
 import { Nav } from 'react-bootstrap';
 import { Navbar } from 'react-bootstrap';
 
-function App() {
-  return (
-    <Container>
-      <Navbar expand="lg">
+class Menu {
+    render() {
+        return (
+            <Navbar expand="lg">
                 <Navbar.Brand href="#home">Home</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -19,10 +15,8 @@ function App() {
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
-      <Header />
-      <Links />
-    </Container>
-  );
+        );
+    }
 }
 
-export default App;
+export default Menu;
