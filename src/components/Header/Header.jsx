@@ -7,7 +7,7 @@ class Header extends Component{
     render(){
         return(
             <Container className="text-center">
-                <AvatarSVG className="col-2 mb-3"/>
+                <AvatarSVG className="col-md-2 col-6 mb-3"/>
                 <h4>Luigi Moretti</h4>
             </Container>
         );
