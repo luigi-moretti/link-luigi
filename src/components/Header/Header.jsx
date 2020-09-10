@@ -1,14 +1,14 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
-import { Image } from 'react-bootstrap';
+import {ReactComponent as AvatarSVG} from "../../assets/svg/man-3.svg";
 
 class Header extends Component{
 
     render(){
         return(
             <Container className="text-center">
-                <Image src="" alt="avatar" />
-                <p>Luigi Moretti</p>
+                <AvatarSVG className="col-2 mb-3"/>
+                <h4>Luigi Moretti</h4>
             </Container>
         );
     }
