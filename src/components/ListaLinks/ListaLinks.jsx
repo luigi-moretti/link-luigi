@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import { Container } from "react-bootstrap";
-import Link from '../LinkItem';
+import LinkItem from '../LinkItem';
 
-class Links extends Component{
+class ListaLinks extends Component{
     render(){
         return(
             <Container className="text-center">
-                <Link/>
-                <Link/>
-                <Link/>
-                <Link/>
+                <LinkItem/>
+                <LinkItem/>
+                <LinkItem/>
+                <LinkItem/>
             </Container>
         );
     }
 }
 
-export default Links;
+export default ListaLinks;

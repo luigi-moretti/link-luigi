@@ -1,6 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router } from 'react-router-dom';
-import Menu from './components/Navbar/Menu';
+import Menu from './components/Menu';
 import Routes from './Routes';
 
 function App() {

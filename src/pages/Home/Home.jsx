@@ -1,9 +1,11 @@
 import React from 'react';
+import Header from '../../components/Header';
+import ListaLinks from '../../components/ListaLinks';
 
 const Home = () => (
     <div className="title">
-        <h4>Home</h4>
-        <p>Essa é minha página inicial.</p>
+        <Header/>
+        <ListaLinks/>
     </div>
 )
 
