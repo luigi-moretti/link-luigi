@@ -9,12 +9,12 @@ const Admin = () => (
         <h3 className="text-center">Bem-Vindo</h3>
         <Header/>
         <Form className="mx-auto col-md-4 col-sm-10 mb-5">
-            <Form.Group controlId="formBasicEmail">
+            <Form.Group>
                 <Form.Label>Título</Form.Label>
                 <Form.Control type="text" placeholder="Título do Link" />
             </Form.Group>
 
-            <Form.Group controlId="formBasicPassword">
+            <Form.Group>
                 <Form.Label>Link</Form.Label>
                 <Form.Control type="text" placeholder="Endereço URL" />
             </Form.Group>
